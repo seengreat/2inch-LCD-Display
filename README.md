@@ -30,6 +30,7 @@ The demo codes of Raspberry Pi motherboard use the pin definition of wiringPi co
 
 
 The wiring diagram of connections between the Raspberry Pi extension interface and display interface is shown in figure 2-1.<br>
+
 ![1.jpg](https://github.com/seengreat/2inch-LCD-Display/blob/main/pic/pic1.png)<br>
                        Figure 2-1 Connection between LCD and Raspberry Pi<br>
 ### 2.1.2、Arduino Hardware Connection
