@@ -45,6 +45,7 @@ LCD and Arduino Connection Pin Correspondences are shown in the following table:
 |DC	|D8|
 |BL	|D7|<br>
 
+ Table 2-2 Pin Definitions of Connections  between LCD and Arduino UNO<br>
 
 ![2.jpg](https://github.com/seengreat/2inch-LCD-Display/blob/main/pic/pic2.png)<br>
                  Figure 2-2 Connections between LCD and Arduino<br>
@@ -78,4 +79,7 @@ python3 2inch_lcd.py<br>
 ### 2.3.1、C
 The structure of demo codes is divided into the underlying layer and the application layer. The underlying file is lcd_2inch.c and lcd_2inch.h, the underlying code implements the initialization of the Raspberry Pi motherboard control pin and the LCD screen. The application layer file is lcd_gui.c and lcd_gui.h, which mainly makes the painting of points, lines, rectangles, circles and the display functions of pictures and characters in Chinese and English come true. The files starting with "font" in the file name are related to the font library. The ".c" suffix corresponds to the font library's data source file, and the data structure of multiple font library data source files is defined in the "fonts.h" file. The file with the suffix ".bmp" in the demo codes of the Raspberry Pi Motherboard is a picture source file used for display, and the number in the file name indicates the number of pixel bits (bpp, bit-per-pixel) of color. For example, fruits24.bmp represents a picture file in 24bpp true color format. The demo codes of Arduino UNO motherboard do not have these ".bmp" files, because the available memory in the Arduino UNO motherboard is relatively less , and the source data of the pictures is stored in the image.cpp file in the form of an array.
 ### 2.3.2、Python 
-The Python demo codes are only provided for the Raspberry Pi platform. Because the Python platform can reference the PIL image processing library, many application-layer API functions can be provided directly by the library, greatly reducing the amount of codes in the demo codes.
+The Python demo codes are only provided for the Raspberry Pi platform. Because the Python platform can reference the PIL image processing library, many application-layer API functions can be provided directly by the library, greatly reducing the amount of codes in the demo codes.<br>
+
+Thank you for choosing the products of Shengui Technology Co.,Ltd. For more details about this product, please visit:
+www.seengreat.com
