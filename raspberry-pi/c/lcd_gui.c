@@ -52,6 +52,8 @@ void Gui_set_pix(u_int16_t x, u_int16_t y, u_int16_t color)
             yy = LCD_H-x-1;
             break;
         default:
+            xx = x;
+            yy = y;
             break;
     }
     if(xx > LCD_W || yy > LCD_H)
@@ -389,7 +391,7 @@ void Gui_draw_str_cn(u_int16_t x, u_int16_t y, const char *str_cn, CN_FONT* Font
     u_int16_t dx = x,dy = y;
     const char *p_str;
     u_int16_t i,row,col_bit;
-    //const char *temp = "���Ƽ�";
+    //const char *temp = "Éî¹ð¿Æ¼¼";
     //printf("test:%s\r\n",temp);
     printf("draw chinese:%s\r\n", str_cn);
     while(*str_cn != '\0')
