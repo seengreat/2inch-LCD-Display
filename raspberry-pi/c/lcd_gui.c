@@ -40,6 +40,10 @@ void Gui_set_pix(u_int16_t x, u_int16_t y, u_int16_t color)
     switch(Image.rotate)
     {
         case ROTATE_90:
+            xx = x;
+            yy = y;
+            break;
+        case ROTATE_90:
             xx = LCD_W-y-1;
             yy = x;
             break;
@@ -52,9 +56,7 @@ void Gui_set_pix(u_int16_t x, u_int16_t y, u_int16_t color)
             yy = LCD_H-x-1;
             break;
         default:
-            xx = x;
-            yy = y;
-            break;
+           return;
     }
     if(xx > LCD_W || yy > LCD_H)
     {
