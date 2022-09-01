@@ -34,6 +34,10 @@ void Gui_set_pix(uint16_t x, uint16_t y, uint16_t color)
     }
     switch(Image.rotate)
     {
+        case ROTATE_0:
+            xx = x;
+            yy = y;
+            break;
         case ROTATE_90:
             xx = LCD_W-y-1;
             yy = x;
@@ -47,13 +51,13 @@ void Gui_set_pix(uint16_t x, uint16_t y, uint16_t color)
             yy = LCD_H-x-1;
             break;
         default:
-            break;
+            return;
     }
     if(xx > LCD_W || yy > LCD_H)
     {
         return;
     }
-    Draw_Point( x, y, color);
+    Draw_Point( xx, yy, color);
 }
 
 void Gui_draw_point(uint16_t x, uint16_t y, uint16_t color, uint16_t width)
