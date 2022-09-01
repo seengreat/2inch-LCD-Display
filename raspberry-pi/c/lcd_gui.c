@@ -39,7 +39,7 @@ void Gui_set_pix(u_int16_t x, u_int16_t y, u_int16_t color)
     color = ((color<<8)&0xff00)|(color>>8);
     switch(Image.rotate)
     {
-        case ROTATE_90:
+        case ROTATE_0:
             xx = x;
             yy = y;
             break;
