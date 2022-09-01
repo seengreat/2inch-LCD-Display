@@ -22,7 +22,7 @@ void setup()
 {
     Lcd_Init();
     Gui_Clear(WHITE);
-    Image_Init(LCD_W, LCD_H, ROTATE_270, MIRROR_NONE);
+    Image_Init(LCD_W, LCD_H, ROTATE_0, MIRROR_NONE);
 }
 
 void loop()
